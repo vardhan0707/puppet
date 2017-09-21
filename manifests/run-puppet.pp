@@ -7,5 +7,5 @@ mode => '0755',
 cron {'run-puppet':
 command => '/usr/local/bin/run-puppet',
 hour => '*',
-minutes => '*/15',
+minute => '*/15',
 }
