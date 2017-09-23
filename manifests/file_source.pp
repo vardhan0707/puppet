@@ -17,3 +17,8 @@ file { '/tmp/testDir' :
 source => '/etc/puppetlabs/code/environments/production/files/testDir',
 recurse => true,
 }
+
+file { '/tmp/sampleText_symlink' :
+ensure => link,
+target =>/tmp/sampleText',
+}
