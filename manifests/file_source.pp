@@ -1,3 +1,19 @@
 file { '/tmp/sampleText':
-source => '/Users/sivalalbotu/code/manifests/sampleText.txt',
+source => '/etc/puppetlabs/code/environments/production/sampleText.txt',
+}
+
+file { '/tmp/README.md':
+source => 'https://github.com/sivalalbotu/puppet/blob/master/README.md',
+}
+
+file { '/tmp/ownedByLal' :
+ensure => present,
+owner => 'lal',
+group => 'lal',
+mode => '0644',
+}
+
+file { '/tmp/testDir' :
+source => '/etc/puppetlabs/code/environments/production/files/testDir',
+recurse => true,
 }
