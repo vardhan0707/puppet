@@ -1,5 +1,5 @@
 file { '/tmp/sampleText':
-source => '/etc/puppetlabs/code/environments/production/sampleText.txt',
+source => '/etc/puppetlabs/code/environments/production/files/sampleText.txt',
 }
 
 file { '/tmp/README.md':
