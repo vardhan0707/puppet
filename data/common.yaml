@@ -1,3 +1,4 @@
+---  
   test: 'This is a test'
   consul_node: true
   apache_pkg: 'apache2'
