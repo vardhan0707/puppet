@@ -5,7 +5,7 @@ package {'curl' :
 ensure=> present,
 provider => brew,
 }
-notice('Installed curl as insall_curl value is' $install_curl)
+notice('Installed curl as insall_curl value is ${install_curl}')
 } else {
 package {'curl' :
 esnure => absent,
