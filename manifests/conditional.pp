@@ -1,4 +1,5 @@
-$install_curl =true,
+$install_curl =true
+
 if $install_curl {
 package {'curl' :
 ensure=> present,
